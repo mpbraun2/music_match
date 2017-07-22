@@ -1,0 +1,7 @@
+<div id="error-display">
+  <% if flash[:errors] %>
+    <% flash[:errors].each do |error| %>
+      <span class="error-message" style="color:red;"> - <%= error %> </span>
+    <% end %>
+  <% end %>
+</div>
